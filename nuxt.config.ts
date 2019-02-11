@@ -3,8 +3,20 @@ import { Context } from '@nuxt/vue-app'
 
 import pkg from './package.json'
 
+const isDev = process.env.NODE_ENV === 'development'
+const BASE_DIR = 'webapp'
+
 export default {
   mode: 'spa',
+
+  // ビルド時の書き出し先変更
+  generate: {
+    dir: isDev ? 'dist' : `dist/${BASE_DIR}`
+  },
+  // ルーティングのベースとなるパス変更
+  router: {
+    base: isDev ? '/' : `/${BASE_DIR}/`
+  },
 
   /*
    ** Headers of the page
@@ -16,7 +28,13 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: pkg.description }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [
+      {
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: isDev ? '/favicon.ico' : `/${BASE_DIR}/favicon.ico`
+      }
+    ]
   },
 
   /*
