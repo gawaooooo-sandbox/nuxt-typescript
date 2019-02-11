@@ -1,0 +1,21 @@
+{
+  "extends": "@nuxt/typescript",
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": [
+        "./*"
+      ],
+      "@/*": [
+        "./*"
+      ]
+    },
+    "types": [
+      "@types/node",
+      "@types/webpack",
+      "@nuxt/vue-app"
+    ]
+  }
+}
