@@ -10,3 +10,19 @@
     </div>
   </section>
 </template>
+
+<script lang="ts">
+/* eslint-disable no-console */
+import { Component, Vue } from 'nuxt-property-decorator'
+import { Context } from '@nuxt/vue-app'
+
+Component.registerHooks(['fetch'])
+
+@Component
+export default class App extends Vue {
+  async fetch(ctx: Context): Promise<void> {
+    console.log('[contact] call fetch method')
+    await ctx.store.dispatch('app/getApps')
+  }
+}
+</script>

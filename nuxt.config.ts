@@ -10,9 +10,11 @@ export default {
   mode: 'spa',
 
   // change port
-  server: {
-    port: 8000
-  },
+  // server: {
+  //   port: 8000
+  // },
+
+  serverMiddleware: ['~api/index'],
 
   // ビルド時の書き出し先変更
   generate: {

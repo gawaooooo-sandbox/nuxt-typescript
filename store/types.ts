@@ -14,3 +14,13 @@ export interface BreedState {
 export interface RootState {
   version: string
 }
+
+export interface App {
+  name: string
+  db: string
+  url?: string
+}
+
+export interface AppState {
+  apps: App[]
+}

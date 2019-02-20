@@ -1,0 +1,20 @@
+{
+  "apps": [
+    {
+      "name": "hey",
+      "db": "hey-db.json",
+      "url": "http://localhost:3000/hey"
+    },
+    {
+      "name": "hoge",
+      "db": "hoge-db.json",
+      "url": "http://localhost:3000/hoge"
+    },
+    {
+      "name": "fuga",
+      "db": "fuga-db.json",
+      "url": "http://localhost:3000/fuga"
+    }
+  ],
+  "current": "hey"
+}
