@@ -1,0 +1,30 @@
+{
+    "css.validate": false,
+    "scss.validate": false,
+    "html.format.extraLiners": "",
+    "html.format.enable": false,
+    "html.validate.styles": false,
+    "javascript.referencesCodeLens.enabled": true,
+    "javascript.validate.enable": false,
+    "javascript.format.enable": false,
+    "typescript.format.enable": false,
+    "prettier.eslintIntegration": true,
+    "prettier.stylelintIntegration": true,
+    "prettier.tslintIntegration": true,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "[vue]": {
+      "editor.formatOnSave": false
+    },
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "eslint.validate": [
+      "javascript",
+      "javascriptreact",
+      {
+          "language": "vue",
+          "autoFix": true
+      },
+      {"language": "typescript", "autoFix": true },
+    ],
+    "eslint.autoFixOnSave": true,
+}
