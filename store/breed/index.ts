@@ -1,6 +1,7 @@
 import { Module } from 'vuex'
-import { BreedState, RootState } from '../types'
+import { BreedState, RootState } from '~/store/types'
 import actions from './actions'
+import getters from './getters'
 import mutations from './mutations'
 
 const state: BreedState = {
@@ -8,9 +9,10 @@ const state: BreedState = {
   dogs: {}
 }
 
-export const breeds: Module<BreedState, RootState> = {
+export const breed: Module<BreedState, RootState> = {
   namespaced: true,
   state,
   actions,
+  getters,
   mutations
 }

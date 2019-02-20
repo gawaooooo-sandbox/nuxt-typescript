@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 import { ActionTree } from 'vuex'
-import { BreedState, RootState } from '../types'
+import { BreedState, RootState } from '~/store/types'
 
 const actions: ActionTree<BreedState, RootState> = {
   async getBreeds({ commit }) {

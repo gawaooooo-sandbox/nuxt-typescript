@@ -1,5 +1,5 @@
 import { MutationTree } from 'vuex'
-import { BreedState } from '../types'
+import { BreedState } from '~/store/types'
 
 const mutations: MutationTree<BreedState> = {
   update: (state, payload) => {

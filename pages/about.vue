@@ -3,7 +3,9 @@
     <section class="hero is-primary is-bold">
       <div class="hero-body">
         <h1 class="title is-size-2">
-          About {{ $store.state.breed.breeds.setter.length }}
+          $store.state
+          {{ $store.state.breed.breeds.setter.length }} $store.getters
+          {{ $store.getters['breed/setterLength'] }}
         </h1>
         <h2 class="subtitle is-size-4">
           あばうと？
@@ -14,7 +16,7 @@
       <div class="columns is-multiline">
         <!-- v-forで繰り返し -->
         <div
-          v-for="(item, i) in $store.state.breed.breeds"
+          v-for="(item, i) in $store.getters['breed/breeds']"
           v-bind:key="i"
           class="column is-2"
         >

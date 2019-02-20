@@ -4,7 +4,7 @@
       <logo />
       <HelloWorld />
       <h1 class="title">
-        {{ $store.state.breed.breeds.shiba.length }}
+        {{ shibaLength }}
       </h1>
       <h2 class="subtitle">
         My astonishing Nuxt.js project
@@ -28,6 +28,7 @@
 <script lang="ts">
 /* eslint-disable no-console */
 import { Component, Vue } from 'nuxt-property-decorator'
+import { mapGetters } from 'vuex'
 import Logo from '~/components/Logo.vue'
 import HelloWorld from '~/components/HelloWorld.vue'
 import { Context } from '@nuxt/vue-app'
@@ -39,6 +40,11 @@ Component.registerHooks(['fetch'])
   components: {
     Logo,
     HelloWorld
+  },
+  computed: {
+    ...mapGetters('breed', {
+      shibaLength: 'shibaLength'
+    })
   }
 })
 export default class Home extends Vue {

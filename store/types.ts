@@ -1,16 +1,9 @@
-interface Message {
-  affenpinscher: string[]
-  shiba: string[]
-}
-
 export interface Breeds {
-  status?: string
-  message?: Message
+  [key: string]: string[]
 }
 
 export interface Dog {
-  status?: string
-  message?: Message
+  [key: string]: string[]
 }
 
 export interface BreedState {
