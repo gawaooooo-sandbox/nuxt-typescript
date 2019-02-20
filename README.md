@@ -1,6 +1,6 @@
-# ts
+# Nuxt + TypeScript Sample
 
-> My astonishing Nuxt.js project
+https://luftgarden.work/tut-nuxt-dog-part1/
 
 ## Build Setup
 

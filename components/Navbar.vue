@@ -10,9 +10,9 @@
         class="navbar-burger"
         data-target="navMenu"
       >
-        <span />
-        <span />
-        <span />
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </div>
 

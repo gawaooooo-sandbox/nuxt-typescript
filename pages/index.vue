@@ -4,7 +4,7 @@
       <logo />
       <HelloWorld />
       <h1 class="title">
-        ts
+        {{ $store.state.breed.breeds.shiba.length }}
       </h1>
       <h2 class="subtitle">
         My astonishing Nuxt.js project
@@ -26,9 +26,14 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
+/* eslint-disable no-console */
+import { Component, Vue } from 'nuxt-property-decorator'
 import Logo from '~/components/Logo.vue'
 import HelloWorld from '~/components/HelloWorld.vue'
+import { Context } from '@nuxt/vue-app'
+
+// TODO: https://github.com/vuejs/vue-class-component#adding-custom-hooks
+Component.registerHooks(['fetch'])
 
 @Component({
   components: {
@@ -36,13 +41,33 @@ import HelloWorld from '~/components/HelloWorld.vue'
     HelloWorld
   }
 })
-export default class Home extends Vue {}
-// export default {
-//   components: {
-//     Logo
-//   }
-// }
-//
+export default class Home extends Vue {
+  // ライフサイクル
+  beforeCreate(): void {
+    console.log('[index] call beforeCreate')
+  }
+  created(): void {
+    console.log('[index] created')
+    // this.$store.dispatch('breed/getBreeds')
+  }
+  beforeMount(): void {
+    console.log('[index] beforeMount')
+  }
+  mounted(): void {
+    console.log('[index] mounted')
+    console.log(this.$store)
+  }
+
+  async fetch(ctx: Context): Promise<void> {
+    console.log('[index] call fetch method')
+    await ctx.store.dispatch('breed/getBreeds')
+  }
+
+  async asyncData(ctx: Context): Promise<void> {
+    console.log('[index] call async data')
+    await ctx.store.dispatch('breed/getBreeds')
+  }
+}
 </script>
 
 <style>

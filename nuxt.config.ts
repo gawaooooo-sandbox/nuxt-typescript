@@ -9,6 +9,11 @@ const BASE_DIR = 'webapp'
 export default {
   mode: 'spa',
 
+  // change port
+  server: {
+    port: 8000
+  },
+
   // ビルド時の書き出し先変更
   generate: {
     dir: isDev ? 'dist' : `dist/${BASE_DIR}`
@@ -66,6 +71,7 @@ export default {
    */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
+    // TODO: proxy?
   },
 
   /*
