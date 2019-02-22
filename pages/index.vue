@@ -26,7 +26,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
+import { Component, Vue } from 'nuxt-property-decorator'
 import Logo from '~/components/Logo.vue'
 import HelloWorld from '~/components/HelloWorld.vue'
 
@@ -37,12 +37,6 @@ import HelloWorld from '~/components/HelloWorld.vue'
   }
 })
 export default class Home extends Vue {}
-// export default {
-//   components: {
-//     Logo
-//   }
-// }
-//
 </script>
 
 <style>
