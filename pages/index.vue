@@ -39,7 +39,7 @@ import HelloWorld from '~/components/HelloWorld.vue'
 export default class Home extends Vue {}
 </script>
 
-<style>
+<style scoped>
 .container {
   margin: 0 auto;
   min-height: 100vh;
