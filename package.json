@@ -17,8 +17,8 @@
     "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/bulma": "^1.2.3",
     "cross-env": "^5.2.0",
-    "nuxt-ts": "^2.4.3",
-    "vue-property-decorator": "^7.3.0"
+    "nuxt-property-decorator": "^2.0.1",
+    "nuxt-ts": "^2.4.3"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^0.0.1",
