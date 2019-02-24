@@ -3,10 +3,16 @@ import { BreedState, RootState } from '~/store/types'
 
 const getters: GetterTree<BreedState, RootState> = {
   setterLength: (state: BreedState) => {
-    return state.breeds.setter.length
+    if (state.breeds && state.breeds.setter) {
+      return state.breeds.setter.length
+    }
+    return 0
   },
   shibaLength: (state: BreedState) => {
-    return state.breeds.shiba.length
+    if (state.breeds && state.breeds.shiba) {
+      return state.breeds.shiba.length
+    }
+    return 0
   },
   breeds: (state: BreedState) => {
     return state.breeds
