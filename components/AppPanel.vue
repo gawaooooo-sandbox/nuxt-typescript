@@ -76,13 +76,13 @@ export default class Panel extends Vue {
 
 <style scoped>
 .panel-heading {
-  text-align: center;
+  /* text-align: center; */
   font-weight: 500;
   font-size: 2.25em;
 }
 .panel-block {
   font-size: 1.5rem;
-  justify-content: center;
+  /* justify-content: center; */
 }
 .panel-icon {
   font-size: 2.5rem;
