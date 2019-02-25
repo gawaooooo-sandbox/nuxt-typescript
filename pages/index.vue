@@ -25,7 +25,6 @@ import { Context } from '@nuxt/vue-app'
   }
 })
 export default class AppHome extends Vue {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   async fetch(ctx: Context): Promise<void> {
     await ctx.store.dispatch('getApps')
   }
