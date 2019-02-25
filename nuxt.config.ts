@@ -29,7 +29,7 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: pkg.name,
+    title: 'select json-server app',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -66,8 +66,10 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     // Doc:https://github.com/nuxt-community/modules/tree/master/packages/bulma
-    '@nuxtjs/bulma'
+    '@nuxtjs/bulma',
+    '@nuxtjs/font-awesome'
   ],
+
   /*
    ** Axios module configuration
    */

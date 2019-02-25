@@ -14,7 +14,27 @@
       "name": "fuga",
       "db": "fuga-db.json",
       "url": "http://localhost:3000/fuga"
+    },
+    {
+      "name": "aa",
+      "db": "aa-db.json",
+      "url": "http://localhost:3000/fuga"
+    },
+    {
+      "name": "bb",
+      "db": "bb-db.json",
+      "url": "http://localhost:3000/fuga"
+    },
+    {
+      "name": "keyaki",
+      "db": "keyaki-db.json",
+      "url": "http://localhost:3000/fuga"
+    },
+    {
+      "name": "46",
+      "db": "46-db.json",
+      "url": "http://localhost:3000/fuga"
     }
   ],
-  "current": "hey"
+  "current": ""
 }
