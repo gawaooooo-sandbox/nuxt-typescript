@@ -17,7 +17,7 @@
     },
     {
       "name": "aa",
-      "db": "aa-db.json",
+      "db": "",
       "url": "http://localhost:3000/fuga"
     },
     {
@@ -27,7 +27,7 @@
     },
     {
       "name": "keyaki",
-      "db": "keyaki-db.json",
+      "db": "",
       "url": "http://localhost:3000/fuga"
     },
     {
