@@ -4,7 +4,7 @@ import { Context } from '@nuxt/vue-app'
 import pkg from './package.json'
 
 const isDev = process.env.NODE_ENV === 'development'
-const BASE_DIR = 'webapp'
+const BASE_DIR = 'webapp/json-server'
 
 export default {
   mode: 'spa',

@@ -9,6 +9,7 @@
     "build": "nuxt-ts build",
     "start": "nuxt-ts start",
     "generate": "nuxt-ts generate",
+    "generate:vagrant": "NUXT_ENV_HOST=web-dev-local.net NUXT_ENV_PORT=3000 nuxt-ts generate",
     "lint": "eslint --ext .js,.vue,.ts --ignore-path .gitignore .",
     "precommit": "npm run lint",
     "test": "jest"

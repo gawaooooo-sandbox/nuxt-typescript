@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { GetAppsResult, SelectAppResult } from '../types/storeType'
 
-const port = process.env.PORT || 3000
-const host = process.env.HOST || 'localhost'
+const port = process.env.NUXT_ENV_PORT || 3000
+const host = process.env.NUXT_ENV_HOST || 'localhost'
 
 export default {
   async getApps({ commit }: any) {
