@@ -1,9 +1,10 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
+import { GetAppsResult, SelectAppResult, State } from '../types/storeType'
+
 export default {
-  updateApps: (state: any, { apps }: any) => {
+  updateApps: (state: State, { apps }: GetAppsResult) => {
     state.apps = apps
   },
-  updateCurrent: (state: any, { appName }: any) => {
+  updateCurrent: (state: State, { appName }: SelectAppResult) => {
     state.current = appName
   }
 }

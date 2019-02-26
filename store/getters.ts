@@ -1,15 +1,17 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
+import { State } from '../types/storeType'
 export default {
-  filterApps: (state: any) => (search: any) => {
+  filterApps: (state: State) => (search: string) => {
     const filtered = []
-    for (const t in state.apps) {
-      if (state.apps[t].name.indexOf(search) !== -1) {
-        filtered.push(state.apps[t])
+    for (const key in state.apps) {
+      const app = state.apps[key]
+      if (!app.db) continue
+      if (app.name.indexOf(search) !== -1) {
+        filtered.push(app)
       }
     }
     return filtered
   },
-  currentApp: (state: any) => () => {
+  currentApp: (state: State) => () => {
     return state.current
   }
 }
