@@ -13,8 +13,12 @@
   "prettier.tslintIntegration": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "[vue]": {
-    "editor.formatOnSave": false
+  "[json]": {
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true
+  },
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false
   },
   "typescript.tsdk": "node_modules/typescript/lib",
   "eslint.validate": [
@@ -27,4 +31,13 @@
     {"language": "typescript", "autoFix": true },
   ],
   "eslint.autoFixOnSave": true,
+  "files.associations": {
+    ".*rc": "json"
+  },
+  "workbench.colorCustomizations": {
+    // "titleBar.activeBackground": "#FFD700",
+    // "titleBar.activeForeground": "#000000",
+    // "activityBar.background": "#FFD700",
+    // "activityBar.foreground": "#000000"
+  }
 }
