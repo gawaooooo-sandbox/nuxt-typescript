@@ -7,7 +7,8 @@ const isDev = process.env.NODE_ENV === 'development'
 const BASE_DIR = 'webapp'
 
 export default {
-  mode: 'spa',
+  // mode: 'spa',
+  mode: 'universal',
 
   // ビルド時の書き出し先変更
   generate: {
