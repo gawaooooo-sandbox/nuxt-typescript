@@ -1,12 +1,11 @@
-import { Configuration } from 'webpack'
-import { Context } from '@nuxt/vue-app'
+import { Configuration } from '@nuxt/types'
 
 import pkg from './package.json'
 
 const isDev = process.env.NODE_ENV === 'development'
 const BASE_DIR = 'webapp'
 
-export default {
+const config: Configuration = {
   // mode: 'spa',
   mode: 'universal',
 
@@ -69,23 +68,25 @@ export default {
     // See https://github.com/nuxt-community/axios-module#options
   },
 
+  buildModules: [
+    [
+      '@nuxt/typescript-build',
+      {
+        typeCheck: true,
+        ignoreNotFoundWarnings: true
+      }
+    ]
+  ],
   /*
    ** Build configuration
    */
   build: {
-    postcss: {
-      preset: {
-        features: {
-          customProperties: false
-        }
-      }
-    },
     /*
      ** You can extend webpack config here
      */
-    extend(config: Configuration, ctx: Context) {
+    extend(config, { isDev, isClient }): void {
       // Run ESLint on save
-      if (ctx.isDev && ctx.isClient) {
+      if (isDev && isClient) {
         if (config.module) {
           config.module.rules.push({
             enforce: 'pre',
@@ -98,3 +99,5 @@ export default {
     }
   }
 }
+
+export default config
