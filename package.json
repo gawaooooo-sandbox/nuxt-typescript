@@ -19,11 +19,11 @@
     "@nuxtjs/axios": "^5.9.2",
     "@nuxtjs/bulma": "^1.2.6",
     "cross-env": "^6.0.3",
-    "nuxt": "^2.11.0",
+    "nuxt": "^3.0.0",
     "nuxt-property-decorator": "^2.5.0"
   },
   "devDependencies": {
-    "@nuxt/typescript-build": "^0.5.5",
+    "@nuxt/typescript-build": "^2.1.0",
     "@nuxtjs/eslint-config-typescript": "^1.0.0",
     "@types/webpack": "^4.41.1",
     "@typescript-eslint/eslint-plugin": "^2.14.0",
@@ -36,7 +36,7 @@
     "eslint-config-prettier": "^6.9.0",
     "eslint-config-standard": ">=14.1.0",
     "eslint-config-typescript": "^3.0.0",
-    "eslint-loader": "^3.0.3",
+    "eslint-loader": "^4.0.2",
     "eslint-plugin-import": ">=2.19.1",
     "eslint-plugin-jest": ">=23.3.0",
     "eslint-plugin-node": ">=11.0.0",
@@ -48,6 +48,6 @@
     "nodemon": "^2.0.2",
     "prettier": "1.19.1",
     "vue-eslint-parser": "^7.0.0",
-    "vue-jest": "^3.0.5"
+    "vue-jest": "^4.0.1"
   }
 }
