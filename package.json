@@ -19,7 +19,7 @@
     "@nuxtjs/axios": "^5.13.6",
     "@nuxtjs/bulma": "^1.2.6",
     "cross-env": "^6.0.3",
-    "nuxt": "^2.11.0",
+    "nuxt": "^2.16.2",
     "nuxt-property-decorator": "^2.5.0"
   },
   "devDependencies": {
@@ -48,6 +48,6 @@
     "nodemon": "^2.0.2",
     "prettier": "1.19.1",
     "vue-eslint-parser": "^7.0.0",
-    "vue-jest": "^3.0.5"
+    "vue-jest": "^4.0.1"
   }
 }
